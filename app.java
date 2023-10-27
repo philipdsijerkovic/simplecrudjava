@@ -105,7 +105,7 @@ public class app {
         items.removeIf(item -> item.getId() == id);
         writeItems(items);
     }
-// Writes items from List<Item> to data.txt
+// Writes items to data.txt
 private static void writeItems(List<Item> items) {
     try (PrintWriter writer = new PrintWriter(FILE)) {
         for (Item item : items) {
